@@ -7,9 +7,9 @@ import { Box, Stack } from '@mui/material';
 function Buttons(){
     return(
         <Stack direction="row" spacing={2} sx={{m:2, p:2}}>
-      <Button sx={{width:300,height:300}}>株</Button>
-      <Button sx={{width:300,height:300}}>株</Button>
-      <Button sx={{width:300,height:300}}>株</Button>
+      <Button href='/TradeBrandInfo_HOME' sx={{width:300,height:300}}>株</Button>
+      <Button href='/FXChart_HOME' sx={{width:300,height:300}}>FX</Button>
+      <Button href='/CFDChart_HOME' sx={{width:300,height:300}}>CFD</Button>
       </Stack>
     )
 }
@@ -20,9 +20,9 @@ export default function BasicButtonGroup() {
         p:23,
         m:1,
     }}>
-    <ButtonGroup variant="contained" aria-label="Basic button group"  >
+    <ButtonGroup variant="contained"   >
         <Stack >
-    <Buttons/>
+    <Buttons />
     <Buttons/>
     <Buttons/>
     </Stack>

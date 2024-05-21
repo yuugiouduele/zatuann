@@ -14,6 +14,11 @@ import { BalanceSheet } from "./Balance/BalanceSheet";
 import { ChatBot } from "./Chart/ChatBot";
 import { Point } from "./Point/Point";
 import { Ecsite } from "./EC/EC";
+import BrandTable from "./Trade/TradeBrand/TradeBrandInfo";
+import LineDataset from "./Trade/TradeBrand/TradeBrandBoard/BrandBoard";
+import ColorSnap from "./Trade/TradeChart/FXChart";
+import CFDChart from "./Trade/TradeChart/CFDChart";
+import StickyFooter from "./Trade/Object/Stikey";
 
 
 export function LinkControl(){
@@ -37,6 +42,11 @@ export function LinkControl(){
             <Route path="/News_HOME" element={<LandingPage/>}/> 
             <Route path="/News_Info_HOME" element={<Blog2/>}/> 
             <Route path="/Ecsite_HOME" element={<Ecsite/>}/>
+            <Route path="/TradeBrandInfo_HOME" element={<BrandTable/>}/>
+            <Route path="/BrandBoard_HOME" element={<LineDataset/>}/>
+            <Route path="/FXChart_HOME" element={<ColorSnap/>}/>
+            <Route path="/CFDChart_HOME" element={<CFDChart/>}/>
+            <Route path="/Monooki_HOME!" element={<StickyFooter/>}/>
 
             </Routes>
         </BrowserRouter>
